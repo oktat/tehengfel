@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8">
+    <title>Henger</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container bg-light p-3 mt-5">
+        <h1>Henger felszíne</h1>
+        <div class="cylinderForm">
+          <div class="form-group">
+            <label for="radius"
+            class="form-label">Felszín</label>
+            <input type="text" class="form-control" 
+            id="radius" placeholder="Felszín">
+          </div>
+          <div class="form-group">
+            <label for="height"
+            class="form-label">Magasság</label>
+            <input type="text" class="form-control" 
+            id="height" placeholder="Magasság">
+          </div>
+          <div>
+            <button id="calcButton"
+            class="btn btn-primary mt-2">Számít</button>
+          </div>
+          <div class="form-group">
+            <label for="surface"
+            class="form-label">Felszín</label>
+            <input type="text" class="form-control" 
+            id="surface" placeholder="Felszín"
+            readonly>
+          </div>
+        </div>
+
+        <div>
+          <img src="henger.png" 
+          class="img-fluid custom-img mt-2"
+          >
+
+          <button class="btn btn-primary"
+          id="delButton">Adatok törlése</button>
+
+          <button id="aboutButton"          
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#aboutModal">Névjegy</button>
+
+        </div>
+
+    </div>
+
+
+    <div class="modal" tabindex="-1" id="aboutModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Névjegy</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Nagy János, 2024-11-20</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezár</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+
+  </body>
+</html>
